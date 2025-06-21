@@ -3,10 +3,14 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   min-height: 100vh;
   background-image: linear-gradient(#ffffff, #ebdcff);
+}
+img {
+  width: 100%;
 }
 .btn {
   background-color: #872bff;
@@ -66,7 +70,7 @@ body {
   font-weight: bold;
 }
 .banner-content {
-  width: 49%;
+  width: 50%;
 }
 .banner-content h1 span {
   color: #f411cf;
@@ -82,10 +86,7 @@ body {
 .banner-image {
   width: 50%;
 }
-.banner-image img {
-  width: 600px;
-}
-.service,
+.service-container,
 .story,
 .country-container,
 .review-container {
@@ -101,10 +102,11 @@ body {
   background-color: #ffffff;
   padding: 60px;
   text-align: center;
-  width: 350px;
+  max-width: 350px;
   border-radius: 30px;
 }
 .service-card img {
+  width: 80px;
   margin-bottom: 30px;
 }
 .service-card h2 {
@@ -126,6 +128,15 @@ body {
 .story-content p,
 .story-content img {
   margin-bottom: 30px;
+}
+.story-content img {
+  width: 100px;
+}
+.story-content {
+  width: 60%;
+}
+.story-image {
+  width: 40%;
 }
 .country-card-container {
   display: flex;
@@ -182,4 +193,8 @@ body {
 }
 .link a {
   margin-left: 10px;
+}
+.link img {
+  width: 40px;
+  margin-top: 20px;
 }
